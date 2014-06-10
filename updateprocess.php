@@ -18,9 +18,10 @@
 				$twon = $row['won'] + 1;
 				$tgf = $row['gf'] + $score1;
 				$tga = $row['ga'] + $score2;
+				$tgd = $row['gd'] + $score1 - $score2;
 				$tpoints = $row['points'] + 3;
 				//Update
-				mysqli_query($con ,"UPDATE central SET played='$tplayed' , won = '$twon' , gf = '$tgf' , ga='$tga' , points='$tpoints' WHERE dname = '$dname1'");
+				mysqli_query($con ,"UPDATE central SET played='$tplayed' , won = '$twon' , gf = '$tgf' , ga='$tga' , gd='$tgd' , points='$tpoints' WHERE dname = '$dname1'");
 			}
 			if($row['dname'] == $dname2)
 			{
@@ -29,8 +30,9 @@
 				$tgf = $row['gf'] + $score2;
 				$tgfa = $row['gfa'] + $score2;
 				$tga = $row['ga'] + $score1;
+				$tgd = $row['gd'] + $score2 - $score1;
 				//update
-				mysqli_query($con ,"UPDATE central SET played='$tplayed' , lost = '$tlost' , gf = '$tgf' , gfa='$tgfa' , ga='$tga' WHERE dname = '$dname2'");
+				mysqli_query($con ,"UPDATE central SET played='$tplayed' , lost = '$tlost' , gf = '$tgf' , gfa='$tgfa' , ga='$tga' , gd='$tgd' WHERE dname = '$dname2'");
 			}
 		}
 	}
@@ -45,8 +47,9 @@
 				$tlost = $row['lost'] + 1;
 				$tgf = $row['gf'] + $score1;
 				$tga = $row['ga'] + $score2;
+				$tgd = $row['gd'] + $score1 - $score2;
 				//Update
-				mysqli_query($con ,"UPDATE central SET played='$tplayed' , lost = '$tlost' , gf = '$tgf' , ga='$tga' WHERE dname = '$dname1'");
+				mysqli_query($con ,"UPDATE central SET played='$tplayed' , lost = '$tlost' , gf = '$tgf' , ga='$tga' , gd='$tgd' WHERE dname = '$dname1'");
 			}
 			if($row['dname'] == $dname2)
 			{
@@ -55,9 +58,10 @@
 				$tgf = $row['gf'] + $score2;
 				$tgfa = $row['gfa'] + $score2;
 				$tga = $row['ga'] + $score1;
+				$tgd = $row['gd'] + $score2 - $score1;
 				$tpoints = $row['points'] + 3;
 				//update
-				mysqli_query($con ,"UPDATE central SET played='$tplayed' , won = '$twon' , gf = '$tgf' , gfa='$tgfa' , ga='$tga' , points='$tpoints' WHERE dname = '$dname2'");
+				mysqli_query($con ,"UPDATE central SET played='$tplayed' , won = '$twon' , gf = '$tgf' , gfa='$tgfa' , ga='$tga' , gd='$tgd' , points='$tpoints' WHERE dname = '$dname2'");
 			}
 		}
 	}
