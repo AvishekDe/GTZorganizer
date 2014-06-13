@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 	<head>
 		
@@ -20,6 +22,6 @@
 		</form>
 
 		<br><br>
-		<a href="index.php"><button id="hbut">Home</button></a>
+		<a href="home.php"><button id="hbut">Home</button></a>
 	</body>
 </html>

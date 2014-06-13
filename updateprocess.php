@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <?php
 	$dname1 = $_POST['dname1'];
 	$score1 = $_POST['score1'];

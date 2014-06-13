@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>
+<body>
+	<h2>List of participants:</h2><br>
+	<table border="1">
+		<tr>
+			<th>Rank</th>
+			<th>Name</th>
+			<th>Display Name</th>
+			<th>Group</th>
+		</tr>
+	
+
+<?php
+	$con = mysqli_connect("localhost" , "root" , "password" , "GTZorganizer");
+
+	$result = mysqli_query($con , "SELECT * FROM central ORDER BY rank");
+
+	while($row = mysqli_fetch_array($result))
+	{
+		echo "<tr>";
+		echo "<th>" . $row['rank'] . "</th>";
+		echo "<th>" . $row['fname'] . "</th>";
+		echo "<th>" . $row['dname'] . "</th>";
+		echo "<th>" . $row['grp'] . "</th>";
+		echo "</tr>";
+	}
+?>
+
+</table>
+</body>
+</html>

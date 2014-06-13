@@ -1,5 +1,4 @@
 <?php session_start(); ?>
-
 <?php
 	if($_SESSION['check'] != 1){
 		session_destroy();
@@ -8,12 +7,11 @@
 ?>
 
 <!DOCTYPE html>
-	<title>
-		
-	</title>
-	<body>
+<head>
 	
-	
+</head>
+<body>
+
 	<table style="float:right;" border="1">
 		<tr>
 			<th>Name</th>
@@ -38,16 +36,16 @@
 ?>
 
 </table>
-<h2>Enter match details:</h2><br>
-		<form method="post" action="updateprocess.php">
-			<input type="text" name="dname1" placeholder="Enter Display Name" required>
-			<input type="text" name="score1" placeholder="Enter score" required> &nbsp - &nbsp
-			<input type="text" name="score2" placeholder="Enter score" required>
-			<input type="text" name="dname2" placeholder="Enter Display Name" required><br>
-			<input type="submit" value="submit">
-		</form>
+	
+	<h2>Enter details:</h2><br>
+	<form action="ugoalsprocess.php" method="post">
+		<input type="text" name="dname" placeholder="Enter display name"> <br>
+		<input type="text" name="player" placeholder="Enter player name"> (use correct spelling) <br>
+		<input type="text" name="goals" placeholder="Enter number of goals"><br>
+		<input type="submit" value="submit">
+	</form>
 
-		<br><br>
+	<br><br>
 		<a href="home.php"><button id="hbut">Home</button></a>
-	</body>
+</body>
 </html>

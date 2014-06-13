@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <?php
 	$rank = $_POST['rank'];
 	$fname = $_POST['fname'];
