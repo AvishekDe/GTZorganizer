@@ -1,12 +1,10 @@
 <?php session_start(); ?>
 
 <!DOCTYPE html>
-	<head>
-		
-	</head>
-	<body>
-		<h2>Enter group Name for Displaying Points Table </h2><br>
-		<form method="get" action="displayprocess.php">
+<head></head>
+<body>
+	<h2> Enter group name to view results: </h2><br>
+	<form method="get" action="vresultsprocess.php">
 			<select name="gname">
 				<option value="A">Group A</option>
 				<option value="B">Group B</option>
@@ -25,5 +23,5 @@
 		<a href="home.php"><button id="hbut">Admin-Home</button></a>
 		<br>
 		<a href="homeg.php"><button id="hbut">Guest-Home</button></a>
-	</body>
+</body>
 </html>

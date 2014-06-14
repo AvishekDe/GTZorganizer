@@ -46,7 +46,6 @@
 		while($row = mysqli_fetch_array($result)) {
 			if($row['dname'] == $dname1)
 			{
-				$g = $row['grp'];
 				$tplayed = $row['played'] + 1;
 				$tlost = $row['lost'] + 1;
 				$tgf = $row['gf'] + $score1;
@@ -57,6 +56,7 @@
 			}
 			if($row['dname'] == $dname2)
 			{
+				$g = $row['grp'];
 				$tplayed = $row['played'] + 1;
 				$twon = $row['won'] + 1;
 				$tgf = $row['gf'] + $score2;
