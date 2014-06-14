@@ -18,10 +18,11 @@
 				// Displaying tables
 				?>
 				<html>
+				<head><link rel="stylesheet" type="text/css" href="main.css"></head>
 					<body>
 						<h1>Group &nbsp<?php echo $gname; ?></h1>
 						<table border="1" style="text-align:center; padding: 1px;">
-							<tr>
+							<tr class="h">
 							<th> Home Team </th>
 							<th> Score</th>
 							<th> -</th>
@@ -55,10 +56,11 @@
 				// Displaying tables
 				?>
 				<html>
+				<head><link rel="stylesheet" type="text/css" href="main.css"></head>
 					<body>
 						<h1>Group &nbsp<?php echo $gname; ?></h1>
 						<table border="1" style="text-align:center; padding: 1px;">
-							<tr>
+							<tr class="h">
 							<th> Home Team</th>
 							<th> Score</th>
 							<th> - </th>

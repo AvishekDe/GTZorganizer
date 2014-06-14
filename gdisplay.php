@@ -1,10 +1,11 @@
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 	<h2>List of Goal Scorers:</h2><br>
 	<table border="1">
-		<tr>
+		<tr class="h">
 			<th>Rank</th>
 			<th>Display Name</th>
 			<th>Player Name</th>
