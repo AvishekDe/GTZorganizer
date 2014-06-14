@@ -4,7 +4,7 @@
 	$user = $_POST['user'];
 	$pass = $_POST['pass'];
 
-	if($user == "test" && $pass == "test")
+	if($user == "dnsgtadmin" && $pass == "fifa@gtz2014")
 	{
 		$_SESSION['check'] = 1;?>
 		<html><script>
