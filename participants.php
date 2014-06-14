@@ -28,6 +28,12 @@
 	}
 ?>
 
+
+
 </table>
+<br><br>
+		<a href="home.php"><button id="hbut">Admin-Home</button></a>
+		<br>
+		<a href="homeg.php"><button id="hbut">Guest-Home</button></a>
 </body>
 </html>

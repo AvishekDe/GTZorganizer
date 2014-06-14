@@ -10,7 +10,6 @@
 	$con = mysqli_connect("localhost" , "root" , "password" , "GTZorganizer");
 
 	mysqli_query($con , "INSERT INTO central (rank , fname , dname , team , grp) VALUES ('$rank' , '$fname' , '$dname' , '$team' , '$grp')"); 
-	mysqli_close($con);
 ?>
 
 <html>

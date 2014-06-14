@@ -16,8 +16,8 @@
 	else
 	{ ?>
 		<html><script>
-		window.alert("Invalid username/password");
-		window.location.replace("index.php");
+		window.alert("Invalid username/password. You will be redirected to the guest page");
+		window.location.replace("homeg.php");
 		</script></html>
 		<?php
 	}
