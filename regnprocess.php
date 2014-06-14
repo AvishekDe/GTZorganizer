@@ -7,7 +7,7 @@
 	$team = $_POST['team'];
 	$grp = $_POST['grp'];
 
-	$con = mysqli_connect("localhost" , "root" , "password" , "GTZorganizer");
+	$con = mysqli_connect("mysql17.000webhost.com" , "a8304808_root" , "gtztourney6" , "a8304808_GTZ");
 
 	mysqli_query($con , "INSERT INTO central (rank , fname , dname , team , grp) VALUES ('$rank' , '$fname' , '$dname' , '$team' , '$grp')"); 
 ?>

@@ -5,7 +5,7 @@
 	$player = $_POST['player'];
 	$assists = $_POST['assists'];
 
-	$con = mysqli_connect("localhost" , "root" , "password" , "GTZorganizer");
+	$con = mysqli_connect("mysql17.000webhost.com" , "a8304808_root" , "gtztourney6" , "a8304808_GTZ");
 
 	$result = mysqli_query($con , "SELECT * FROM assists WHERE dname='$dname' AND player='$player'");
 	
