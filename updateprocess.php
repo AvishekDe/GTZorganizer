@@ -16,6 +16,7 @@
 		while($row = mysqli_fetch_array($result)) {
 			if($row['dname'] == $dname1)
 			{
+				$g = $row['grp'];
 				$tplayed = $row['played'] + 1;
 				$twon = $row['won'] + 1;
 				$tgf = $row['gf'] + $score1;
@@ -45,6 +46,7 @@
 		while($row = mysqli_fetch_array($result)) {
 			if($row['dname'] == $dname1)
 			{
+				$g = $row['grp'];
 				$tplayed = $row['played'] + 1;
 				$tlost = $row['lost'] + 1;
 				$tgf = $row['gf'] + $score1;
@@ -74,6 +76,7 @@
 		while($row = mysqli_fetch_array($result)) {
 			if($row['dname'] == $dname1)
 			{
+				$g = $row['grp'];
 				$tplayed = $row['played'] + 1;
 				$tdrew = $row['drew'] + 1;
 				$tgf = $row['gf'] + $score1;
@@ -95,6 +98,10 @@
 			}
 		}
 	}
+
+
+	$sql = mysqli_query($con , "INSERT INTO results (hdname , hscore , ascore , adname , grp) VALUES ('$dname1' , '$score1' , '$score2' , '$dname2' , '$g')");
+
 	
 ?>
 
