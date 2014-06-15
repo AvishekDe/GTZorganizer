@@ -6,10 +6,11 @@
 	$dname = $_POST['dname'];
 	$team = $_POST['team'];
 	$grp = $_POST['grp'];
+	$points = $_POST['points'];
 
 	$con = mysqli_connect("mysql17.000webhost.com" , "a8304808_root" , "gtztourney6" , "a8304808_GTZ");
 
-	mysqli_query($con , "INSERT INTO central (rank , fname , dname , team , grp) VALUES ('$rank' , '$fname' , '$dname' , '$team' , '$grp')"); 
+	mysqli_query($con , "INSERT INTO central (rank , fname , dname , team , grp , points) VALUES ('$rank' , '$fname' , '$dname' , '$team' , '$grp' , '$points')"); 
 ?>
 
 <html>

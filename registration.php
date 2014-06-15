@@ -42,6 +42,7 @@
 			<input type="text" name="fname" placeholder="Enter full name" required><br>
 			<input type="text" name="dname" placeholder="Enter display name" required>(three characters only)<br>
 			<input type="text" name="team" placeholder="Enter team" required><br>
+			<input type="text" name="points" placeholder="Enter initial points" required><br>
 			<select name="grp">
 				<option value="A">Group A</option>
 				<option value="B">Group B</option>
