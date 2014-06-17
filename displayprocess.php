@@ -76,7 +76,7 @@
 				}
 
 				//Sorting members
-				$sql = mysqli_query($con , "SELECT * FROM central WHERE grp='$gname' ORDER BY points DESC , gd DESC , gf DESC , gfa DESC");
+				$sql = mysqli_query($con , "SELECT * FROM central WHERE grp='$gname' ORDER BY points DESC , gd DESC , gf DESC , gfa DESC , rank");
 
 				// Displaying tables
 				?>
