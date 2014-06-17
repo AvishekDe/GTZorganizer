@@ -4,7 +4,7 @@
 </head>
 <body>
 	<h1>Application Details</h1><br>
-	<h4>Version number :1.1</h4><br>
+	<h4>Version number :1.2</h4><br>
 	<h4>Developed by: <a href="http://www.facebook.com/gunneravishek">Avishek De</a></h4>
 	<br><br>
 	This web application has been designed for handling Logistics for the GTz Tournament held every year.
