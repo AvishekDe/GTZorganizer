@@ -5,7 +5,8 @@
 	$player = $_POST['player'];
 	$goals = $_POST['goals'];
 
-	$con = mysqli_connect("mysql17.000webhost.com" , "a8304808_root" , "gtztourney6" , "a8304808_GTZ");
+	$conf = parse_ini_file("config.ini");
+	$con = mysqli_connect($conf['host'] , $conf['user'] , $conf['password'] , $conf['database']);
 
 	$result = mysqli_query($con , "SELECT * FROM goals WHERE dname='$dname' AND player='$player'");
 	
