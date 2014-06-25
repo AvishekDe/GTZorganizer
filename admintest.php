@@ -3,8 +3,8 @@
 <?php
 	$user = $_POST['user'];
 	$pass = $_POST['pass'];
-
-	if($user == "dnsgtadmin" && $pass == "fifa@gtz2014")
+	$conf = parse_ini_file("config.ini");
+	if($user == $conf['auser'] && $pass == $conf['apass'])
 	{
 		$_SESSION['check'] = 1;?>
 		<html><script>
