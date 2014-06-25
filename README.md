@@ -4,7 +4,6 @@ GTZorganizer
 A web application for handling logistics during the GTz Tournament
 
 #Features
-=========
 - Player Registration in 8 groups for a group and knockout tournament
 - Easy results updation mechanism
 - Displaying group tables
@@ -12,7 +11,6 @@ A web application for handling logistics during the GTz Tournament
 - Displaying draw and results for knockout stages
 
 #Setup Instructions
-===================
 - Download files
 - Add a file admintest.php with your own admin check parameters
 - Download sample config.ini and sql files
