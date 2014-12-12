@@ -44,16 +44,6 @@
 			<input type="text" name="dname" placeholder="Enter display name" required>(three characters only)<br>
 			<input type="text" name="team" placeholder="Enter team" required><br>
 			<input type="text" name="points" placeholder="Enter initial points" required><br>
-			<select name="grp">
-				<option value="A">Group A</option>
-				<option value="B">Group B</option>
-				<option value="C">Group C</option>
-				<option value="D">Group D</option>
-				<option value="E">Group E</option>
-				<option value="F">Group F</option>
-				<option value="G">Group G</option>
-				<option value="H">Group H</option>
-			</select><br>
 			<input type="submit" value="Submit">
 		</form>
 		
