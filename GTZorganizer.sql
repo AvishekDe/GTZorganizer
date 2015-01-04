@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 25, 2014 at 08:12 PM
+-- Generation Time: Jan 04, 2015 at 11:13 AM
 -- Server version: 5.5.37-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `assists` (
   `tassists` int(11) NOT NULL,
   UNIQUE KEY `serial` (`serial`),
   UNIQUE KEY `serial_2` (`serial`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `goals` (
   `tgoals` int(11) NOT NULL,
   UNIQUE KEY `serial` (`serial`),
   UNIQUE KEY `serial_2` (`serial`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -90,7 +90,18 @@ CREATE TABLE IF NOT EXISTS `knockouts` (
   `adname` text NOT NULL,
   UNIQUE KEY `serialno` (`serialno`),
   UNIQUE KEY `serialno_2` (`serialno`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `randomizer`
+--
+
+CREATE TABLE IF NOT EXISTS `randomizer` (
+  `rank` int(11) NOT NULL,
+  UNIQUE KEY `rank` (`rank`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -107,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `results` (
   `grp` text NOT NULL,
   UNIQUE KEY `serial` (`serial`),
   UNIQUE KEY `serial_2` (`serial`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
