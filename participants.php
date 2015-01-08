@@ -12,6 +12,7 @@
 			<th>Rank</th>
 			<th>Name</th>
 			<th>Display Name</th>
+			<th>Team</th>
 			<th>Group</th>
 		</tr>
 	
@@ -28,6 +29,7 @@
 		echo "<th>" . $row['rank'] . "</th>";
 		echo "<th>" . $row['fname'] . "</th>";
 		echo "<th>" . $row['dname'] . "</th>";
+		echo "<th>" . $row['team'] ."</th>";
 		echo "<th>" . $row['grp'] . "</th>";
 		echo "</tr>";
 	}
