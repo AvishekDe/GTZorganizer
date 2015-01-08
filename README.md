@@ -5,6 +5,7 @@ A web application for handling logistics during the GTz Tournament
 
 #Features
 - Player Registration in 8 groups for a group and knockout tournament
+- Random grouping using Mersenne Twister Algorithm
 - Easy results updation mechanism
 - Displaying group tables
 - Support for displaying top scorers and assist givers
