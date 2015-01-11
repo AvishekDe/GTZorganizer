@@ -14,8 +14,8 @@
 	
 
 	
-		repeat:
-		$random=mt_rand(1,8);
+	while(true){
+		$random=rand(1,8);
 		$pot=(int)(($rank-1)/8);
 		$position=($pot*8)+$random;
 
@@ -25,11 +25,9 @@
 		if($row==null){
 			mysqli_query($con,"INSERT INTO randomizer (rank) VALUES ('$position')");
 			$flag=1;
+			break;
 		}
-		else{
-			goto repeat;
-		}
-
+	}	
 		$grp = chr($random+64);	?>
 
 		<html><script> var grouping = '<?php echo $grp; ?>'; </script></html>
