@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<script type="text/javascript" src="./js/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
 	</head>
 
 	<body>
@@ -12,7 +14,12 @@
 			<img src="./assets/pics/football.svg">
 		</div>
 
-		<div class="titletext"><div class="titleholder">GTz Tournament 6</div></div>
+		<div class="titletext"><div class="topbarholder">GTz Tournament 6</div></div>
+
+		<div class="about"><div class="topbarholder border">About</div></div>
+		<div class="about"><div class="topbarholder border">Contact</div></div>
+		<div class="about"><div class="topbarholder border">Gallery</div></div>
+		<div class="about"><div class="topbarholder border">Register</div></div>
 	</div>
 
 		<form method="post" action="admintest.php">

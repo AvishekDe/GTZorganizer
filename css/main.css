@@ -4,6 +4,10 @@
 	src:url("../assets/fonts/Finalnew.ttf");
 }
 
+@font-face{
+	font-family: robotolight;
+	src:url("../assets/fonts/Roboto-Light.ttf");
+}
 
 
 
@@ -20,7 +24,7 @@ a
 
 .topbar{
 	width: 100%;
-	background-color: #419B24;
+	background-color: #099FDC;
 	height:100px;
 	padding: 10px 0px ;
 	vertical-align: middle;
@@ -50,8 +54,25 @@ a
 	color: white;
 }
 
-.titletext .titleholder{
+.topbarholder{
+	height:40px;
 	position: relative;
 	top: 50%;
 	transform:translateY(-40%);
+}
+
+.about{
+	position: relative;
+	float: right;
+	font-family: robotolight;
+	color: white;
+	height: 80px;
+	margin-top: 10px;
+	margin-right:20px;
+	font-size: 25px;
+}
+
+.border:hover{
+	border-bottom:5px solid white;
+	cursor: pointer;
 }
