@@ -1,0 +1,57 @@
+/* FONTS */
+@font-face{
+	font-family: finalfrontier;
+	src:url("../assets/fonts/Finalnew.ttf");
+}
+
+
+
+
+a
+{
+	text-decoration: none;
+}
+
+.h
+{
+	background-color: #042029;
+	color: honeydew;
+}
+
+.topbar{
+	width: 100%;
+	background-color: #419B24;
+	height:100px;
+	padding: 10px 0px ;
+	vertical-align: middle;
+}
+
+.toplogo{
+	position:relative;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 80px;
+	height: 80px;
+}
+
+.toplogo img{
+	max-width: 100%;
+}
+
+.titletext{
+	position: relative;
+	float: left;
+	height: 80px;
+	font-size: 50px;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-family: "finalfrontier";
+	color: white;
+}
+
+.titletext .titleholder{
+	position: relative;
+	top: 50%;
+	transform:translateY(-40%);
+}

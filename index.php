@@ -2,12 +2,18 @@
 
 <!DOCTYPE html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
 	</head>
 
 	<body>
 
-	<h1>Welcome to the official web application for GTz Tournament #6 </h1><hr><br>
+	<div class="topbar">
+		<div class="toplogo">
+			<img src="./assets/pics/football.svg">
+		</div>
+
+		<div class="titletext"><div class="titleholder">GTz Tournament 6</div></div>
+	</div>
 
 		<form method="post" action="admintest.php">
 			<input type="text" name="user" placeholder="Enter user name">
