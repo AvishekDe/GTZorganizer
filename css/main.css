@@ -83,13 +83,16 @@ a
     transition: all 200ms ease;
 }
 
-#loginops{
+.homediv{
 	margin-top: 10px;
 	width:100%;
 	padding: 10px 0px;
+	margin-bottom: 10px;
+	min-height: 100px;
+	overflow: hidden;
 }
 
-#logintitle{
+.hometitles{
 	width: 100%;
 	font-family: robotolight;
 	font-size: 35px;
@@ -102,7 +105,7 @@ a
 	position: relative;
 	float: left;
 	width: 49%;
-	height: 300px;
+	height: 270px;
 	text-align: center;
 }
 
@@ -112,7 +115,7 @@ a
 	float: left;
 	width: 49%;
 	border-left: 2px solid #099FDC;
-	height: 300px;
+	height: 270px;
 
 }
 
@@ -169,3 +172,24 @@ a
     -ms-transition: all 400ms ease;
     transition: all 400ms ease;
 }
+
+#news{
+	background-color: #099FDC;
+}
+
+#newstitle{
+	color: white;
+}
+
+#bulletins{
+	width: 100%;
+	padding: 10px 5px;
+	font-size: 13px;
+	font-family: robotolight;
+	color: white;
+	text-align: center;
+	min-height: 50px;
+	overflow: auto;
+	max-height: 350px;
+}
+

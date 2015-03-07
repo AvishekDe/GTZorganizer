@@ -21,13 +21,13 @@
 		<div class="about"><div class="topbarholder border">About</div></div>
 		<div class="about"><div class="topbarholder border">Contact</div></div>
 		<div class="about"><div class="topbarholder border">Gallery</div></div>
-		<div class="about"><div class="topbarholder border">Register</div></div>
+		<div class="about"><div class="topbarholder border">Rules</div></div>
 	</div>
 
 
 	<!-- LOGIN DIVS -->
-	<div id="loginops">
-		<div id="logintitle">Go to Tournament Central</div>
+	<div id="loginops" class="homediv">
+		<div id="logintitle" class="hometitles">Go to Tournament Central</div>
 		<div id="adminlogin"><div id="admintitle" class="logintitles">Administrator</div>
 		<form method="post" action="admintest.php">
 			<input class = "formfield" type="text" name="user" placeholder="Enter user name"><br>
@@ -40,7 +40,10 @@
 		</div>
 	</div>
 
-		
-		<a href="about.php"><button>About</button></a>
+	<!-- NEWS DIV -->
+	<div id="news" class="homediv">
+		<div id="newstitle" class="hometitles">News and Updates</div>
+		<div id="bulletins"></div>
+	</div>
 	</body>
 </html>
