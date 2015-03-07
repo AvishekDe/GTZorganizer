@@ -3,12 +3,14 @@
 <!DOCTYPE html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
 		<script type="text/javascript" src="./js/jquery-2.1.3.min.js"></script>
 		<script type="text/javascript" src="./js/main.js"></script>
 	</head>
 
 	<body>
 
+	<!-- TOPBAR -->
 	<div class="topbar">
 		<div class="toplogo">
 			<img src="./assets/pics/football.svg">
@@ -22,14 +24,23 @@
 		<div class="about"><div class="topbarholder border">Register</div></div>
 	</div>
 
-		<form method="post" action="admintest.php">
-			<input type="text" name="user" placeholder="Enter user name">
-			<input type="password" name="pass" placeholder="Enter password">
-			<input type="submit" value="Enter as Admin">
-		</form><br>
-		<h2> or <h2><br>
 
-		<a href="homeg.php"><button>Enter as Guest</button></a><hr><br> <br> <br>
+	<!-- LOGIN DIVS -->
+	<div id="loginops">
+		<div id="logintitle">Go to Tournament Central</div>
+		<div id="adminlogin"><div id="admintitle" class="logintitles">Administrator</div>
+		<form method="post" action="admintest.php">
+			<input class = "formfield" type="text" name="user" placeholder="Enter user name"><br>
+			<input class="formfield" type="password" name="pass" placeholder="Enter password"><br><br>
+			<input class="formsubmit" type="submit" value="Enter as Admin">
+		</form>
+		</div>
+		<div id="guestlogin"><div class="logintitles">Guest</div>
+		<a href="homeg.php" id="guestSubmit"><button class="formsubmit">Enter as Guest</button></a>
+		</div>
+	</div>
+
+		
 		<a href="about.php"><button>About</button></a>
 	</body>
 </html>

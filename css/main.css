@@ -11,6 +11,7 @@
 
 
 
+
 a
 {
 	text-decoration: none;
@@ -75,4 +76,96 @@ a
 .border:hover{
 	border-bottom:5px solid white;
 	cursor: pointer;
+	-webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+#loginops{
+	margin-top: 10px;
+	width:100%;
+	padding: 10px 0px;
+}
+
+#logintitle{
+	width: 100%;
+	font-family: robotolight;
+	font-size: 35px;
+	text-align: center;
+	color:#099fdc;
+	margin-bottom: 10px;
+}
+
+#adminlogin{
+	position: relative;
+	float: left;
+	width: 49%;
+	height: 300px;
+	text-align: center;
+}
+
+#guestlogin{
+	text-align: center;
+	position: relative;
+	float: left;
+	width: 49%;
+	border-left: 2px solid #099FDC;
+	height: 300px;
+
+}
+
+.logintitles{
+	margin-top: 20px;
+	width: 100%;
+	padding: 10px 0px;
+	text-align: center;
+	font-family: robotolight;
+	font-size: 30px;
+	color:#099FDC;
+	vertical-align: m
+}
+
+.formfield{
+	text-align: center;
+	font-family: robotolight;
+	font-size: 15px;
+	margin-top:20px;
+	border: 1px solid #099FDC;
+}
+
+
+.formsubmit{
+	padding:5px 15px; 
+	background-color:#099FDC; 
+	border:1px solid #099FDC;
+    cursor:pointer;
+    -webkit-border-radius: 0px;
+    border-radius: 0px; 
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: robotolight;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+#guestSubmit{
+	position: relative;
+	top: 50%;
+	transform:translateY(-40%);
+}
+
+.formsubmit:hover {
+    background-color: #ffffff;
+    color:#099FDC;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    transition: all 400ms ease;
 }
