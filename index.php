@@ -20,7 +20,7 @@
 		<div id="topbarscroll">
 		<div id="fulllengthtop">
 		<div class="titletext"><div class="topbarholder">GTz Tournament 6</div></div>
-		<div class="about"><div class="topbarholder border">About</div></div>
+		<div class="about"><div id="about-button" class="topbarholder border">About</div></div>
 		<div class="about"><div class="topbarholder border">Contact</div></div>
 		<div class="about"><div class="topbarholder border">Gallery</div></div>
 		<div class="about"><div class="topbarholder border">Rules</div></div>
