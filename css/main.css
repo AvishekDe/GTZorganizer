@@ -193,3 +193,42 @@ a
 	max-height: 350px;
 }
 
+#prevwincontainer{
+	width: 1080px;
+	margin: 20px 0px;
+	height: 300px;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	float: left;  
+}
+
+.prevwinscroll{
+	position: relative;
+	width: 8%;
+	margin: 20px 0px;
+	height: 300px;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.scrollarrows{
+	position: relative;
+	width: 100%;
+	height: auto;
+	top: 50%;
+	transform: translateY(-40%);
+}
+
+.prevwinele{
+	height: 100%;
+	width: 360px;
+	position: relative;
+	float: left;
+}
+
+#scrollablediv{
+	height: 100%;
+	width: 2160px;
+}
