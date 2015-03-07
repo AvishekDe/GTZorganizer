@@ -10,7 +10,11 @@
 }
 
 
-
+.centervertical{
+	position: relative;
+	top:50%;
+	transform:translateY(-50%);
+}
 
 a
 {
@@ -88,7 +92,7 @@ a
 	width:100%;
 	padding: 10px 0px;
 	margin-bottom: 10px;
-	min-height: 100px;
+	min-height: 1px;
 	overflow: hidden;
 }
 
@@ -184,7 +188,7 @@ a
 #bulletins{
 	width: 100%;
 	padding: 10px 5px;
-	font-size: 13px;
+	font-size: 20px;
 	font-family: robotolight;
 	color: white;
 	text-align: center;
@@ -194,7 +198,7 @@ a
 }
 
 #prevwincontainer{
-	width: 1080px;
+	width: 84%;
 	margin: 20px 0px;
 	height: 300px;
 	overflow-y:hidden;
@@ -231,4 +235,174 @@ a
 #scrollablediv{
 	height: 100%;
 	width: 2160px;
+}
+
+.pwin-title{
+	text-align: center;
+	height: 15%;
+	font-family: robotolight;
+	color: grey;
+	width: 100%;
+	vertical-align: middle;
+	font-size: 40px;
+}
+
+.pwin-image{
+	height: 70%;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.pwin-name{
+	text-align: center;
+	height: 15%-15px;
+	font-family: robotolight;
+	color: #099FDC;
+	width: 100%;
+	vertical-align: middle;
+	font-size: 25px;
+	padding-top: 15px;
+}
+
+.middle{
+	width: 359px;
+	border-left: 1px solid #099FDC;
+}
+
+.pwin-pics{
+	width: 200px;
+	height: 200px;
+	position: relative;	
+	border-radius: 100px;
+	filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);  /* For Webkit browsers */
+    filter: gray;  /* For IE 6 - 9 */
+    -webkit-transition: all .6s ease;  /* Transition for Webkit browsers */
+    cursor: pointer;
+}
+
+.pwin-pics:hover{
+	filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    filter: none;
+}
+
+#about{
+	background-color: #099FDC;
+}
+
+.abouttitle{
+	color: white;
+	margin: 10px 0px;
+}
+
+#aboutcontainer{
+	overflow-x:auto;
+	overflow-y:hidden;
+	text-align: center;  
+	width: 100%;
+	min-height: 50px;
+}
+
+#tournament-details{
+	margin:20px 20px;
+	text-align: center;
+	color: white;
+	font-family: robotolight;
+	font-size: 18px;
+}
+
+.aboutlevel2{
+	margin: 40px 0px;
+	font-size: 25px;
+}
+
+#host-container{
+	width: 1080px;
+	position: relative;
+	overflow-x:auto;
+	overflow-y:hidden;
+	text-align: center;
+	left: 50%;
+	transform:translateX(-50%);
+	min-height: 2px;
+}
+
+.hosts{
+	float: left;
+	position: relative;
+	width: 360px;
+}
+
+.hm{
+	width: 359px;
+	border-left: 1px solid white;
+}
+
+.hn {
+	color: white;
+	font-size: 20px;
+}
+
+#devtitle{
+	margin-top: 50px;
+}
+
+#dev-container{
+	width: 400px;
+	position: relative;
+	overflow-x:auto;
+	overflow-y:hidden;
+	text-align: center;
+	left: 50%;
+	transform:translateX(-50%);
+}
+
+#bb-container{
+	position: relative;
+	overflow-x:auto;
+	overflow-y:hidden;
+	min-height: 20px;  
+	width: 100%;
+}
+
+.bb{
+	float: left;
+	position: relative;
+	color: #099FDC;
+	width: 359px;
+	min-height: 1px;
+	border-left: 1px solid #099FDC; 
+	text-align: center;
+	font-family: robotolight;
+	font-size: 15px;
+}
+
+.bbscroll{
+	position: relative;
+	left: 50%;
+	transform:translateX(-50%);
+	width: 1080px;
+	min-height: 2px;
+	overflow-x:auto;
+	overflow-y:hidden;  
+}
+
+#removeB{
+	border:0px;
+	width: 360px;
+}
+
+#best-viewed{
+	position: relative;
+	width: 1080px;
+	left: 50%;
+	transform:translateX(-50%);
+	font-family: robotolight;
+	color: #099FDC;
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 10px;
 }
