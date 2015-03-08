@@ -19,7 +19,7 @@
 
 		<div id="topbarscroll">
 		<div id="fulllengthtop">
-		<div class="titletext"><div class="topbarholder">GTz Tournament 6</div></div>
+		<div class="titletext"><div onclick="window.location='index.php'" class="topbarholder">GTz Tournament 6</div></div>
 		<div class="about"><div onclick="window.location='index.php#about'" id="about-button" class="topbarholder border">About</div></div>
 		<div class="about"><div class="topbarholder border">Contact</div></div>
 		<div class="about"><div class="topbarholder border">Gallery</div></div>
@@ -28,20 +28,36 @@
 		</div>
 	</div>
 
+	<!-- OPTIONS BAR -->
+	<div id="options-g" class="option-bar">
+		<div class="options-title">Options</div>
+		<button class="formsubmit option-button" id="button-par">Participant List</button>
+		<a href="display.php"><button class="formsubmit option-button" id="disp">Points Table</button></a>
+		<a href="gdisplay.php"><button class="formsubmit option-button">Top Scorers</button></a>
+		<a href="adisplay.php"><button class="formsubmit option-button">Top Assists</button></a>
+		<a href="vresults.php"><button class="formsubmit option-button">View Results</button></a>
+		<a href="kview.php"><button class="formsubmit option-button">View Knockouts</button></a>
+	</div>
 
 
 
 
+	<!-- DISPLAY BOX -->
+	<div id="displayc-g" class="display-box">
+		<div id="default-display-g" class="default-display multi-disp active">
+			<div class="centervertical">Welcome<br>to<br>Tournament Central</div>
+		</div>
+
+		<div id="participants-g" class="display-g multi-disp inactive">
+			<?php 
+				include 'participants.php';
+			?>
+		</div>
+	</div>
 
 
 
 
-		<h1> Welcome Guest: </h1> <br> <br>
-		<a href="participants.php"><button>Participant List</button></a>
-		<a href="display.php"><button id="disp">Points Table</button></a>
-		<a href="gdisplay.php"><button>Top Scorers</button></a>
-		<a href="adisplay.php"><button>Top Assists</button></a>
-		<a href="vresults.php"><button>View Results</button></a>
-		<a href="kview.php"><button>View Knockouts</button></a>
+		
 	</body>
 </html>

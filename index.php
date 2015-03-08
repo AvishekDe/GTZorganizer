@@ -19,7 +19,7 @@
 
 		<div id="topbarscroll">
 		<div id="fulllengthtop">
-		<div class="titletext"><div class="topbarholder">GTz Tournament 6</div></div>
+		<div class="titletext"><div onclick="window.location='index.php'" class="topbarholder">GTz Tournament 6</div></div>
 		<div class="about"><div id="about-button" class="topbarholder border">About</div></div>
 		<div class="about"><div class="topbarholder border">Contact</div></div>
 		<div class="about"><div class="topbarholder border">Gallery</div></div>
@@ -151,7 +151,8 @@
 	<!-- COPYRIGHT -->
 	<div id="bottombar" class="homediv">
 			<div id="best-viewed">
-				Best viewed in Google Chrome 25.0+, Mozilla Firefox 20.0+ and Internet Explorer 9+ in 1280 x 720 resolution or more.
+				Best viewed in Google Chrome 25.0+, Mozilla Firefox 20.0+ and Internet Explorer 9+ in 1280 x 720 resolution or more.<br> 
+				Made with &hearts; at IIT-Roorkee, India
 			</div>
 			<div id="bb-container">
 				<div class="bbscroll">
