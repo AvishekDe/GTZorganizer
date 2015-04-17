@@ -469,3 +469,18 @@ a
 	text-align: center;
 	display: none;
 }
+
+#countdown-container{
+	width: 100%;
+	height: 100px;
+	padding: 5px;
+}
+
+#timer{
+	position: relative;
+	left: 50%;
+	transform:translateX(-50%);
+	width: auto;
+	display: inline-block;
+	font-size: 50px;
+}

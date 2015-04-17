@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="./css/reset.css">
 		<script type="text/javascript" src="./js/jquery-2.1.3.min.js"></script>
 		<script type="text/javascript" src="./js/main.js"></script>
+		<script type="text/javascript" src="./js/timer.js"></script>
 
 	</head>
 
@@ -31,6 +32,15 @@
 
 	<!-- LOGIN DIVS -->
 	<div id="loginops" class="homediv">
+		<div id="logintitle" class="hometitles">Time left to Start of Event</div>
+		<!--Countdown Clock-->
+		<div id="countdown-container">
+			<div id="timer"></div>
+		</div>
+
+
+
+		<!--Login Portion-->
 		<div id="logintitle" class="hometitles">Go to Tournament Central</div>
 		<div id="adminlogin"><div id="admintitle" class="logintitles">Administrator</div>
 		<form method="post" action="admintest.php">
