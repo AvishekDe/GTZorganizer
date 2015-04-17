@@ -32,11 +32,11 @@
 	<div id="options-g" class="option-bar">
 		<div class="options-title">Options</div>
 		<button class="formsubmit option-button" id="button-par">Participant List</button>
-		<a href="display.php"><button class="formsubmit option-button" id="disp">Points Table</button></a>
-		<a href="gdisplay.php"><button class="formsubmit option-button">Top Scorers</button></a>
-		<a href="adisplay.php"><button class="formsubmit option-button">Top Assists</button></a>
-		<a href="vresults.php"><button class="formsubmit option-button">View Results</button></a>
-		<a href="kview.php"><button class="formsubmit option-button">View Knockouts</button></a>
+		<button class="formsubmit option-button" id="button-point-table">Points Table</button>
+		<button class="formsubmit option-button" id="button-top-scorers">Top Scorers</button>
+		<button class="formsubmit option-button" id="button-top-assists">Top Assists</button>
+		<button class="formsubmit option-button" id="button-view-results">View Results</button>
+		<button class="formsubmit option-button" id="button-view-knockouts">View Knockouts</button>
 	</div>
 
 
@@ -52,6 +52,36 @@
 			<?php 
 				include 'participants.php';
 			?>
+		</div>
+
+		<div id="points-display-g" class="display-g multi-disp inactive">
+			<?php
+				include 'display.php';
+			?>
+		</div>
+
+		<div id="top-scorers-g" class="display-g multi-disp inactive">
+			<?php 
+				include 'gdisplay.php';
+			?>
+		</div>
+
+		<div id="top-assists-g" class="display-g multi-disp inactive">
+			<?php
+				include 'adisplay.php';
+			?>
+		</div>
+
+		<div id="view-results-g" class="display-g multi-disp inactive">
+			<?php 
+				include 'vresults.php';
+			?>			
+		</div>
+
+		<div id="view-knockouts-g" class="display-g multi-disp inactive">
+			<?php 
+				include 'kview.php';
+			?>			
 		</div>
 	</div>
 
