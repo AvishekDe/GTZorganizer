@@ -128,4 +128,6 @@ $(document).ready(function(){
     	$(".inactive").css('display' , 'none');
     	$(".active").css('display', 'block');
     }
+
+    $(".ClassyCountdown-value").css('font-family' , 'robotolight');
 });

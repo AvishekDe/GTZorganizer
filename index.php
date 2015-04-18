@@ -2,11 +2,15 @@
 
 <!DOCTYPE html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="./css/main.css">
 		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/jquery.classycountdown.min.css" />
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
 		<script type="text/javascript" src="./js/jquery-2.1.3.min.js"></script>
-		<script type="text/javascript" src="./js/main.js"></script>
 		<script type="text/javascript" src="./js/timer.js"></script>
+		<script src="./js/jquery.classycountdown.min.js"></script>
+		<script src="./js/jquery.knob.js"></script>
+		<script src="./js/jquery.throttle.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
 
 	</head>
 
