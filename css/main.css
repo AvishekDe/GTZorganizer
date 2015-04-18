@@ -9,6 +9,12 @@
 	src:url("../assets/fonts/Roboto-Light.ttf");
 }
 
+.d-buttons{
+	margin: 2px;
+	background-color: white;
+	border: 1px solid #099FDC;
+	font-family: 15px;
+}
 
 .centervertical{
 	position: relative;
@@ -507,3 +513,4 @@ a
 .display-tables .even{
 	background-color: #D7EAF9;
 }
+
