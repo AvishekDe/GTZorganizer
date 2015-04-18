@@ -411,7 +411,6 @@ a
 	position: relative;
 	margin: 40px 0px;
 	width: 40%;
-	border-right: 1px solid #099FDC;
 	min-height: 1px;
 	overflow: hidden;
 	text-align: center;
@@ -441,8 +440,9 @@ a
 	position: relative;
 	margin: 40px 0px;
 	width: 55%;
+	border-left: 1px solid #099FDC;
 	margin-right: 2.5%;
-	min-height: 1px;
+	min-height: 385px;
 	overflow: hidden;
 	text-align: center;
 	float: right;
@@ -483,4 +483,27 @@ a
 	width: auto;
 	display: inline-block;
 	font-size: 50px;
+}
+
+.display-tables{
+	position: relative;
+	left: 50%;
+	transform:translateX(-50%);
+	font-size: 20px;
+	font-family: 'robotolight';
+}
+
+.display-tables td{
+	padding: 5px;
+}
+
+.display-tables th{
+	background-color: #099FDC;
+	padding: 5px;
+	color: white;
+	font-weight: 700;
+}
+
+.display-tables .even{
+	background-color: #D7EAF9;
 }

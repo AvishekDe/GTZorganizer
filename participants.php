@@ -6,8 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<h2>List of participants:</h2><br>
-	<table border="1">
+	<div class="options-title">List of participants</div>
+	<table class="display-tables" border="1">
 		<tr class="h">
 			<th>Rank</th>
 			<th>Name</th>
@@ -22,15 +22,18 @@
 	$con = mysqli_connect($conf['host'] , $conf['user'] , $conf['password'] , $conf['database']);
 
 	$result = mysqli_query($con , "SELECT * FROM central ORDER BY rank");
-
+	$count = 0;
 	while($row = mysqli_fetch_array($result))
 	{
-		echo "<tr>";
-		echo "<th>" . $row['rank'] . "</th>";
-		echo "<th>" . $row['fname'] . "</th>";
-		echo "<th>" . $row['dname'] . "</th>";
-		echo "<th>" . $row['team'] ."</th>";
-		echo "<th>" . $row['grp'] . "</th>";
+		$count++;
+		$rowmarker = (int)($count%2);
+		if($rowmarker == 0) $rowmarker = "even";
+		echo "<tr class='$rowmarker'>";
+		echo "<td>" . $row['rank'] . "</td>";
+		echo "<td>" . $row['fname'] . "</td>";
+		echo "<td>" . $row['dname'] . "</td>";
+		echo "<td>" . $row['team'] ."</td>";
+		echo "<td>" . $row['grp'] . "</td>";
 		echo "</tr>";
 	}
 ?>
