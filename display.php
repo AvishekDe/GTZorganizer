@@ -7,7 +7,7 @@
 	<body>
 		<div class="options-title">Points Table </div>
 		<form method="get" action="displayprocess.php">
-			<select class="d-buttons" name="gname">
+			<select id="group-fetch" class="d-buttons" name="gname">
 				<option value="A">Group A</option>
 				<option value="B">Group B</option>
 				<option value="C">Group C</option>
@@ -18,7 +18,27 @@
 				<option value="H">Group H</option>
 				<option value="X">All Groups</option>
 			</select><br>
-			<input class="d-buttons formsubmit" type="submit" value="Submit"><br>
+			<button id="group-select" class="d-buttons formsubmit">Submit</button>
 		</form>
+		<div id="maincont"></div>
+
+		<script>
+			$('#group-select').click(function(e){
+				//Get Selected Value
+				var sel = document.getElementById("group-fetch");
+				var strUser = sel.options[sel.selectedIndex].value;
+
+				//Load Data through Ajax
+			    e.preventDefault();
+			    $.ajax({
+			        type: "GET",
+			        url: "displayprocess.php",
+			        data: {gname:strUser },
+			        success: function(data){
+			            $('#maincont').html(data);
+			        }
+			    });
+			});
+		</script>
 	</body>
 </html>
