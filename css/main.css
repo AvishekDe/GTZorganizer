@@ -495,8 +495,11 @@ a
 	position: relative;
 	left: 50%;
 	transform:translateX(-50%);
-	font-size: 20px;
+	font-size: 15px;
+	margin-left: 2%;
+	margin-right: 2%;
 	font-family: 'robotolight';
+	width: 96%;
 }
 
 .display-tables td{

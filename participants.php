@@ -3,7 +3,7 @@
 
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
 	<div class="options-title">List of participants</div>
