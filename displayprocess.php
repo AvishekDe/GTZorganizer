@@ -13,6 +13,7 @@
 	{
 		for($j = 'A' ; $j <= 'H' ; $j++)
 		{
+			$count = 0;
 			$gname = $j ;
 			$result = mysqli_query($con , "SELECT rank FROM central WHERE grp='$gname'");
 				while($row = mysqli_fetch_array($result)){

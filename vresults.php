@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <head></head>
 <body>
-	<div class="options-title"> Enter group name to view results </div>
+	<div class="options-title"> Results </div>
 	<form method="get" action="vresultsprocess.php">
-			<select name="gname">
+			<select name="gname" id="results-fetch" class="d-buttons">
 				<option value="A">Group A</option>
 				<option value="B">Group B</option>
 				<option value="C">Group C</option>
@@ -16,7 +16,27 @@
 				<option value="H">Group H</option>
 				<option value="X">All Groups</option>
 			</select><br>
-			<input type="submit" value="Submit"><br>
+			<button id="results-select" class="d-buttons formsubmit">Submit</button>	
 		</form>
+		<div id="maincont2"></div>
+
+		<script>
+			$('#results-select').click(function(e){
+				//Get Selected Value
+				var sel = document.getElementById("results-fetch");
+				var strUser = sel.options[sel.selectedIndex].value;
+
+				//Load Data through Ajax
+			    e.preventDefault();
+			    $.ajax({
+			        type: "GET",
+			        url: "vresultsprocess.php",
+			        data: {gname:strUser },
+			        success: function(data){
+			            $('#maincont2').html(data);
+			        }
+			    });
+			});
+		</script>
 </body>
 </html>
