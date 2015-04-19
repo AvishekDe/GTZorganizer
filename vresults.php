@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <head></head>
 <body>
-	<h2> Enter group name to view results: </h2><br>
+	<div class="options-title"> Enter group name to view results </div>
 	<form method="get" action="vresultsprocess.php">
 			<select name="gname">
 				<option value="A">Group A</option>

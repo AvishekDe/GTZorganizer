@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
-	<div class="options-title">List of Goal Scorers:</div>
+	<div class="options-title">List of Goal Scorers</div>
 	<table class="display-tables" border="1">
 		<tr class="h">
 			<th>Rank</th>
