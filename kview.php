@@ -3,17 +3,35 @@
 <html>
 <head></head>
 <body>
-	<h2>Enter Knockout stage to proceed:</h2><br>
+	<div class="options-title">Knockouts</div>
 	<form method="get" action="kviewprocess.php">
-		<select name="rnd">
+		<select name="rnd" id="round-fetch" class="d-buttons">
 			<option value="r">Round of 16</option>
 			<option value="q">Quarter Finals</option>
 			<option value="s">Semi Finals</option>
 			<option value="f">Finals</option>
 		</select><br>
-		<input type="submit" value="Submit">
+		<button id="round-select" class="d-buttons formsubmit">Submit</button>
 	</form>
+	<div id="maincont3"></div>
 
-	<br><br>
+	<script>
+			$('#round-select').click(function(e){
+				//Get Selected Value
+				var sel = document.getElementById("round-fetch");
+				var strUser = sel.options[sel.selectedIndex].value;
+
+				//Load Data through Ajax
+			    e.preventDefault();
+			    $.ajax({
+			        type: "GET",
+			        url: "kviewprocess.php",
+			        data: {rnd:strUser },
+			        success: function(data){
+			            $('#maincont3').html(data);
+			        }
+			    });
+			});
+		</script>
 </body>
 </html>

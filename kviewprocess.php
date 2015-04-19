@@ -5,24 +5,23 @@
 	$rnd = $_GET['rnd'];
 	$conf = parse_ini_file("config.ini");
 	$con = mysqli_connect($conf['host'] , $conf['user'] , $conf['password'] , $conf['database']);
-	
+	$count = 1;
 	$result = mysqli_query($con , "SELECT * FROM knockouts WHERE round='$rnd' ORDER BY matchno");
 
 	// Displaying tables
 	?>
 	<html>
 	<head>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	</head>
 		<body>
-			<h1>Knockout Stages:</h1>
 			<?php
-				if($rnd == 'r') echo "<h2> Round of 16 </h2>";
-				else if($rnd == 'q') echo "<h2> Quarter Finals </h2>";
-				else if($rnd == 's') echo "<h2> Semi Finals </h2>";
-				else echo "<h2> Finals </h2>";
+				if($rnd == 'r') echo "<div class='options-title'> Round of 16 </div>";
+				else if($rnd == 'q') echo "<div class='options-title'> Quarter Finals </div>";
+				else if($rnd == 's') echo "<div class='options-title'> Semi Finals </div>";
+				else echo "<div class='options-title'> Finals </div>";
 			?>
-			<table border="1" style="text-align:center; padding: 1px;">
+			<table class="display-tables" border="1" style="text-align:center; padding: 1px;">
 				<tr class="h">
 				<th> Home Team</th>
 				<th> Score</th>
@@ -34,11 +33,12 @@
 			
 		<?php
 		$blank = 1;
-		for($i=1 ; $i<=15 ; $i++)
-				echo "<tr></tr>";
+		
 		while ($row = mysqli_fetch_array($result))
 		{
-			echo "<tr>";
+			$rowmarker = (int)($count%2);
+			if($rowmarker == 0) $rowmarker = "even";
+			echo "<tr class='$rowmarker'>";
 			echo "<td>" . $row['hdname'] . "</td>";
 			echo "<td>" . $row['hscore'] . "</td>";
 			echo "<td> - </td>";
@@ -47,7 +47,7 @@
 			echo "</tr>";
 			if($blank % 2 == 0){
 				for($i=1 ; $i<=15 ; $i++)
-				echo "<tr></tr>";
+				$count++;
 			}
 
 			$blank++;
