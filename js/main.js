@@ -130,4 +130,24 @@ $(document).ready(function(){
     }
 
     $(".ClassyCountdown-value").css('font-family' , 'robotolight');
+
+
+
+
+    //CONTACT INFO
+    $(".contact-div").mouseenter(function(){
+        $(this).children(".contact-name-div").stop().animate({top: "20%", 'font-size' : "35px"});
+        $(this).children(".contact-description-div").stop().animate({top : "15%" , 'font-size' : "15px"});
+        $(this).children(".contact-number-div").stop().fadeIn(1000);
+        $(this).children(".social-icons-div").stop().fadeIn(1000);
+
+    });
+
+    $(".contact-div").mouseleave(function(){
+        $(this).children(".contact-name-div").stop().animate({top: "40%" , 'font-size' : "45px"});
+        $(this).children(".contact-description-div").stop().animate({top : "40%" , 'font-size' : "20px"});
+        $(this).children(".contact-number-div").stop().fadeOut(200);
+        $(this).children(".social-icons-div").stop().fadeOut(200);
+    });
+
 });
